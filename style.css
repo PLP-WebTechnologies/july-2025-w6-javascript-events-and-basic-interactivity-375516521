@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.success {
+  color: green;
+}
+
+button {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+
+
