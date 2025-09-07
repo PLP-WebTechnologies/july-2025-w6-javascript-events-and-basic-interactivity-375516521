@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page</h1>
+    <button id="toggle-theme">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Game -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <button id="increment-btn">+1</button>
+      <button id="reset-btn">Reset</button>
+      <p>Score: <span id="score">0</span></p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>❓ FAQ</h2>
+      <div class="faq">
+        <h3 class="question">What is this site?</h3>
+        <p class="answer hidden">This is a demo of JavaScript interactivity.</p>
+      </div>
+      <div class="faq">
+        <h3 class="question">How does the toggle work?</h3>
+        <p class="answer hidden">It switches between dark and light themes using JS.</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>📋 Sign Up</h2>
+      <form id="signup-form" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" />
+          <span class="error" id="name-error"></span>
+        </label>
+        <label>
+          Email:
+          <input type="email" id="email" />
+          <span class="error" id="email-error"></span>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" />
+          <span class="error" id="password-error"></span>
+        </label>
+        <button type="submit">Submit</button>
+        <p id="form-success" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
